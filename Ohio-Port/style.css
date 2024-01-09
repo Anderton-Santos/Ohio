@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: linear-gradient(to bottom, #000 0, #000 50%, #fff 50%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    background-image: linear-gradient(to bottom, red 0, red 40%, #fff 40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 60vh;
+    border: 1px solid #000;
+    border-radius: 3%;
+    box-shadow: 2px 2px 2px 2px;
+
+}
+
+
+
+
+
+
+.img-person img{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.person-text{
+    font-size: 24px;
+}
+
+.personame{
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.personnametrophy{
+    font-size: 10px;
+}
+
+.person-button{
+    opacity: 0.2;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40%;
+
+}
+
+
+.person-button:hover{
+    opacity: 1;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40%;
+
+}
+
+
+
+
+
+.person-button i{
+    font-size: 32px;
+}
+
+.button-random{
+    padding: 10px;
+}
+
+.button-random button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: none;
+    width: 200px;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+
+}
+
+.person-trophy{
+    display: none;
+}
+
+.person-trophyOn{
+    position:absolute;
+    top:10%; left: 28%;
+    text-align: center;
+    width: 700px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px black;
+    border-radius: 8%;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+#person-trophyX{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    background-color: red;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
