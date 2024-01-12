@@ -73,6 +73,9 @@ const buttonsobre = document.getElementById('sobre')
 
 const trophyX = document.getElementById('person-trophyX')
 
+const ButtonPrevious = document.querySelector('.button-previous')
+const ButtonNext = document.querySelector('.button-next')
+
 
 
 
@@ -140,12 +143,25 @@ function showPerson(){
 
 }
 
-
-randomBTN.addEventListener("click", function(){
+ButtonNext.addEventListener("click", function(){
     currentperson++
     if(currentperson > person.length -1){
         currentperson = 0
     }
     showPerson()
+})
+
+ButtonPrevious.addEventListener("click", function(){
+    currentperson--
+    if(currentperson < 0){
+        currentperson = person.length -1;
+    }
+    showPerson()
+})
+
+randomBTN.addEventListener("click", function(){
+    console.log(currentperson)
+    currentItem = Math.floor(Math.random() * person.length);
+    showPerson(currentperson);
 })
 
