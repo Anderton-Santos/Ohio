@@ -44,20 +44,46 @@ const person = [
         champion: ['º 2023, Arnold Classic USA, Mne’s Classic Physique 4th Place',
         'º  2023, IFBB Saudi Classic Pro, Men’s Classic Physique, 1st',
         'º  2022, IFBB Olympia, Men’s Classic Physique, 5th',
-        '2021, IFBB Poland Pro Supershow Men’s Classic Physique, 1st',
-        '2021, IFBB Olympia Pro, Men’s Classic Physique, 7th',
-        '2021, IFBB Xtreme Bodybuilding & Fitness Pro, Men’s Classic Physique, 1st',
-        '2020, IFBB Romania Muscle Fest Pro, Men’s Classic Physique, 6th',
-        '2020, IFBB British Grand Prix Pro, Men’s Classic Physique, 2nd',
-        '2020, IFBB Europa Pro, Men’s Classic Physique, 3rd',
-        '2019, IFBB Dennis James Classic Pro, Men’s Classic Physique, 2nd',
-        '2019, IFBB Romania Pro, Men’s Bodybuilding – up to 212 lbs, 13th',
-        '2016, IFBB Arnold Classic Europe Amateur, Men’s Bodybuilding – Juniors, 3rd',
-        '2014, IFBB Arnold Classic Europe Amateur, Men’s Bodybuilding – Juniors, 3rd',
+        'º  2022, IFBB Olympia, Men’s Classic Physique, 5th',
+        'º  2021, IFBB Poland Pro Supershow Men’s Classic Physique, 1st',
+        'º  2021, IFBB Olympia Pro, Men’s Classic Physique, 7th',
+        'º  2021, IFBB Xtreme Bodybuilding & Fitness Pro, Men’s Classic Physique, 1st',
+        'º  2020, IFBB Romania Muscle Fest Pro, Men’s Classic Physique, 6th',
+        'º  2020, IFBB British Grand Prix Pro, Men’s Classic Physique, 2nd',
+        'º  2020, IFBB Europa Pro, Men’s Classic Physique, 3rd',
+        'º  2019, IFBB Dennis James Classic Pro, Men’s Classic Physique, 2nd',
+        'º  2019, IFBB Romania Pro, Men’s Bodybuilding – up to 212 lbs, 13th',
+        'º  2016, IFBB Arnold Classic Europe Amateur, Men’s Bodybuilding – Juniors, 3rd',
+        'º  2014, IFBB Arnold Classic Europe Amateur, Men’s Bodybuilding – Juniors, 3rd',
         ],
 
         sobre: 'Mike Sommerfield, atleta Alemão nascido em 1994 conseguiu seu Pro Card em 2018',
     },
+
+    {id: 4,
+        personimg : './images/Person4-Breon.jpg',
+        nameperson: 'Breon Ansley',
+        age: '44 anos',
+        champion: [ 'New York Pro 2014 – Top 16',
+            'Europa Phoenix 2014 – Top 15',
+            'Prestige Crystal Cup 2016 – Top 1',
+            'Mr. Olympia 2016 – Top 4',
+            'New York Pro 2017 – Top 1',
+            'Mr. Olympia 2017 – Top 1',
+            'Arnold Classic Ohio 2018 – Top 1',
+            'Mr. Olympia 2018 – Top 1',
+            'Pittsburgh Pro 2018 – Top 1',
+            'Mr. Olympia 2020 – Top 3',
+            'Mr. Olympia 2021 – Top 3',
+            'Arnold Classic Ohio 2022 – Top 4',
+            'Mr. Olympia 2022 – Top 4',
+            'Mr. Olympia 2023 – Top 4',
+        ],
+
+        sobre: ['Ao crescer, Breon Ansley mostrou que tinha uma aptidão natural para a prática esportiva com o envolvimento em diversas modalidades, como tênis e natação.',
+        'No entanto, sua verdadeira paixão era o futebol americano, esporte que o levou a conquistar uma bolsa de estudos pelo seu desempenho como defensor.',
+        'Infelizmente, uma lesão interrompeu a promissora carreira de Breon Ansley no futebol, levando-o a retornar para sua cidade e explorar novos horizontes na indústria do entretenimento.',
+    ],},
 ]
 
 const img = document.querySelector('.person-img');
@@ -161,7 +187,7 @@ ButtonPrevious.addEventListener("click", function(){
 
 randomBTN.addEventListener("click", function(){
     console.log(currentperson)
-    currentItem = Math.floor(Math.random() * person.length);
+    currentperson = Math.floor(Math.random() * person.length);
     showPerson(currentperson);
 })
 
